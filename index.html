@@ -3,211 +3,208 @@
 <link rel="stylesheet" href="resources/styles.css">
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 <head>
-<div max-width=100%>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A Differentiable Recurrent Surface for Asynchronous Event-Based Data</title>
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="canonical" href="https://marcocannici.github.io/matrixlstm/" />
-  <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>A Differentiable Recurrent Surface for Asynchronous Event-Based Data</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://marcocannici.github.io/matrixlstm/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <meta property="og:site_name" content="Matrix-LSTM Event Surface" />
-  <meta property="og:type" content="video.other" />
-  <meta property="og:title" content="A Differentiable Recurrent Surface for Asynchronous Event-Based Data" />
-  <meta property="og:description" content="M. Cannici, M. Ciccone, A. Romanoni, M. Matteucci. A Differentiable Recurrent Surface for Asynchronous Event-Based Data. ECCV 2020." />
-  <meta property="og:url" content="https://marcocannici.github.io/matrixlstm/" />
-  <meta property="og:image" content="https://marcocannici.github.io/matrixlstm/overview.svg" />
-  
-  <meta property="article:publisher" content="https://github.com/marcocannici" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="A Differentiable Recurrent Surface for Asynchronous Event-Based Data" />
-  <meta name="twitter:description" content="M. Cannici, M. Ciccone, A. Romanoni, M. Matteucci. A Differentiable Recurrent Surface for Asynchronous Event-Based Data. ECCV 2020." />
-  <meta name="twitter:url" content="https://marcocannici.github.io/matrixlstm/" />
-  <meta name="twitter:image" content="https://marcocannici.github.io/matrixlstm/overview.svg" />
-  <meta name="twitter:site" content="@marcocannici" />
-  <meta property="og:image:width" content="1120" />
-  <meta property="og:image:height" content="400" />
+    <meta property="og:site_name" content="Matrix-LSTM Event Surface" />
+    <meta property="og:type" content="video.other" />
+    <meta property="og:title" content="A Differentiable Recurrent Surface for Asynchronous Event-Based Data" />
+    <meta property="og:description" content="M. Cannici, M. Ciccone, A. Romanoni, M. Matteucci. A Differentiable Recurrent Surface for Asynchronous Event-Based Data. ECCV 2020." />
+    <meta property="og:url" content="https://marcocannici.github.io/matrixlstm/" />
+    <meta property="og:image" content="https://marcocannici.github.io/matrixlstm/overview.svg" />
+
+    <meta property="article:publisher" content="https://github.com/marcocannici" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A Differentiable Recurrent Surface for Asynchronous Event-Based Data" />
+    <meta name="twitter:description" content="M. Cannici, M. Ciccone, A. Romanoni, M. Matteucci. A Differentiable Recurrent Surface for Asynchronous Event-Based Data. ECCV 2020." />
+    <meta name="twitter:url" content="https://marcocannici.github.io/matrixlstm/" />
+    <meta name="twitter:image" content="https://marcocannici.github.io/matrixlstm/overview.svg" />
+    <meta name="twitter:site" content="@marcocannici" />
+    <meta property="og:image:width" content="1120" />
+    <meta property="og:image:height" content="400" />
 </head>
 
 <body>
-      <br><br><br>
-      <center><span style="font-size:44px;font-weight:bold;">A Differentiable Recurrent Surface for Asynchronous Event-Based Data</span></center><br/>
-      <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
-          <div><center><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=Xd9geyMAAAAJ" target="_blank">Marco Cannici</a></span></center>
-          <center><span style="font-size:18px">Politecnico di Milano</span></center>
-          </div>
+<div max-width=100%>
+    <br><br><br>
+    <span style="font-size:44px;font-weight:bold;">A Differentiable Recurrent Surface for Asynchronous Event-Based Data</span><br/>
+    <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=Xd9geyMAAAAJ" target="_blank">Marco Cannici</a></span>
+            <span style="font-size:18px">Politecnico di Milano</span>
+        </div>
 
-          <div><center><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=hOQjblcAAAAJ" target="_blank">Marco Ciccone</a></span></center>
-          <center><span style="font-size:18px">Politecnico di Milano</span></center>
-          </div>
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=hOQjblcAAAAJ" target="_blank">Marco Ciccone</a></span>
+            <span style="font-size:18px">Politecnico di Milano</span>
+        </div>
 
-          <div><center><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=nqRe0vsAAAAJ" target="_blank">Andrea Romanoni</a></span></center>
-          <center><span style="font-size:18px">Politecnico di Milano</span></center>
-          </div>
-          
-          <div><center><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=PdbEg5YAAAAJ" target="_blank">Matteo Matteucci</a></span></center>
-          <center><span style="font-size:18px">Politecnico di Milano</span></center>
-          </div>
-      </div>
-      <center><span style="font-size:20px;"><a href='https://eccv2020.eu/'>European Conference on Computer Vision (ECCV), 2020</a></span></center>
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=nqRe0vsAAAAJ" target="_blank">Andrea Romanoni</a></span>
+            <span style="font-size:18px">Politecnico di Milano</span>
+        </div>
 
-      <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
-        <div><center><span style="font-size:28px"><a href='https://arxiv.org/abs/2001.03455'>[Paper]</a></span></center></div>
-        <div><center><span style="font-size:28px"><a href='https://github.com/marcocannici/matrixlstm'>[GitHub Code]</a></span></center> </div>
-      </div>
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=PdbEg5YAAAAJ" target="_blank">Matteo Matteucci</a></span>
+            <span style="font-size:18px">Politecnico di Milano</span>
+        </div>
+    </div>
+    <span style="font-size:20px;"><a href='https://eccv2020.eu/'>European Conference on Computer Vision (ECCV), 2020</a></span>
 
-      <div style="width:800px; margin:0 auto; text-align: justify;">
-      <p>
-      <b>Summary:</b> We propose a mechanism to efficiently apply a Long Short-Term Memory (LSTM) network as a convolutional filter over the 2D stream of events produced by
-          event-based cameras in order to accumulate pixel information through time and build 2D event representations. The reconstruction mechanism is end-to-end differentiable, 
-          meaning that it can be jointly trained with state-of-the-art frame-based architectures to learn event-surfaces specifically tailored for the task at hand.
-      </p>
-      
-      <center>
-      <video width="800" height="450" autoplay loop muted="" controls>
-        <source src="resources/matrixlstm.mkv" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-      </center>
-          
-      <p>
-        <b>Abstract:</b> Dynamic Vision Sensors (DVSs) asynchronously stream events in correspondence of pixels subject to brightness changes. 
-          Differently from classic vision devices, they produce a sparse representation of the scene. Therefore, to apply standard computer vision algorithms, 
-          events need to be integrated into a frame or event-surface. This is usually attained through hand-crafted grids that reconstruct the frame using ad-hoc heuristics. 
-          In this paper, we propose Matrix-LSTM, a grid of Long Short-Term Memory (LSTM) cells that efficiently process events and learn end-to-end task-dependent event-surfaces. 
-          Compared to existing reconstruction approaches, our learned event-surface shows good flexibility and expressiveness on optical flow estimation on the MVSEC benchmark 
-          and it improves the state-of-the-art of event-based object classification on the N-Cars dataset.
-      </p>
-      </div>
-      <br><hr>
-    
-      <center><h1>CUDA Kernels</h1></center>
-      <div style="width:800px; margin:0 auto; text-align: justify">
-        <center>
+    <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
+        <div><span style="font-size:28px"><a href='https://arxiv.org/abs/2001.03455'>[Paper]</a></span></div>
+        <div><span style="font-size:28px"><a href='https://github.com/marcocannici/matrixlstm'>[GitHub Code]</a></span> </div>
+    </div>
+
+    <div style="width:800px; margin:0 auto; text-align: justify;">
+        <p>
+            <b>Summary:</b> We propose a mechanism to efficiently apply a Long Short-Term Memory (LSTM) network as a convolutional filter over the 2D stream of events produced by
+            event-based cameras in order to accumulate pixel information through time and build 2D event representations. The reconstruction mechanism is end-to-end differentiable,
+            meaning that it can be jointly trained with state-of-the-art frame-based architectures to learn event-surfaces specifically tailored for the task at hand.
+        </p>
+
+
+        <video width="800" height="450" autoplay loop muted="" controls>
+            <source src="resources/matrixlstm.mkv" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+        <p>
+            <b>Abstract:</b> Dynamic Vision Sensors (DVSs) asynchronously stream events in correspondence of pixels subject to brightness changes.
+            Differently from classic vision devices, they produce a sparse representation of the scene. Therefore, to apply standard computer vision algorithms,
+            events need to be integrated into a frame or event-surface. This is usually attained through hand-crafted grids that reconstruct the frame using ad-hoc heuristics.
+            In this paper, we propose Matrix-LSTM, a grid of Long Short-Term Memory (LSTM) cells that efficiently process events and learn end-to-end task-dependent event-surfaces.
+            Compared to existing reconstruction approaches, our learned event-surface shows good flexibility and expressiveness on optical flow estimation on the MVSEC benchmark
+            and it improves the state-of-the-art of event-based object classification on the N-Cars dataset.
+        </p>
+    </div>
+    <br><hr>
+
+    <h1>CUDA Kernels</h1>
+    <div style="width:800px; margin:0 auto; text-align: justify">
+
         <a href="resources/cuda_kernel.svg" target="_blank">
-        <img style="height:300px" src="resources/cuda_kernel.svg"/></a>
-        </center><br />
-          
-        Inspired by the convolution operation defined on images,we designed the Matrix-LSTM layer to enjoy translation invariance by performing a local mapping of events into features. 
+            <img style="height:300px" src="resources/cuda_kernel.svg"/></a>
+        <br />
+
+        Inspired by the convolution operation defined on images, we designed the Matrix-LSTM layer to enjoy translation invariance by performing a local mapping of events into features.
         This is implemented by sharing the parameters across all the LSTM cells in the matrix, as in a convolutional kernel.
         The convolution-like operation is implemented efficiently by means of two carefully designed event grouping operations, namely <em>groupByPixel</em> and <em>groupByTime</em>.
-        Thanks to these operations, rather than replicating the LSTM unit multiple times on each spatial location, a single recurrent unit is applied  over  different sequences in parallel.
-        
-      </div>
-      <hr>
-    
-      <center><h1>Classification</h1></center>
-      <div style="width:800px; margin:0 auto; text-align: justify">
-          
-      We test the Matrix-LSTM surface on the N-Cars and N-Caltech101 classification datasets. The evaluation of the goodness of Matrix-LSTM features is performed indirectly: a state-of-the-art 
-      architecture is taken as a reference and the proposed method is evaluated in terms of the gain in performance obtained by replacing the network representation with a Matrix-LSTM. <br/><br/>
-          
-      <center><video width="600" loop muted="" controls>
-        <!--<source src="resources/ncaltech101.mp4" type="video/mp4">-->
-        <source src="https://drive.google.com/uc?export=download&id=181zukTGk0wGrMiwVUPchUfiqChFDiGZo" type='video/mp4'>
-      Your browser does not support the video tag.
-          </video><br/><br/>
-          
+        Thanks to these operations, rather than replicating the LSTM unit multiple times on each spatial location, a single recurrent unit is applied over different sequences in parallel.
+
+    </div>
+    <hr>
+
+    <h1>Classification</h1>
+    <div style="width:800px; margin:0 auto; text-align: justify">
+
+        We test the Matrix-LSTM surface on the N-Cars and N-Caltech101 classification datasets. The evaluation of the goodness of Matrix-LSTM features is performed indirectly: a state-of-the-art
+        architecture is taken as a reference and the proposed method is evaluated in terms of the gain in performance obtained by replacing the network representation with a Matrix-LSTM. <br/><br/>
+
+        <video width="600" loop muted="" controls>
+            <!--<source src="resources/ncaltech101.mp4" type="video/mp4">-->
+            <source src="https://drive.google.com/uc?export=download&id=181zukTGk0wGrMiwVUPchUfiqChFDiGZo" type='video/mp4'>
+            Your browser does not support the video tag.
+        </video><br/><br/>
+
         <img style="width:600px" src="resources/cls_table.png"/>
-      </center>          
-      </div>
-      <hr>
 
-      <center><h1>Optical Flow Prediction</h1></center>
-      <div style="width:800px; margin:0 auto; text-align: justify">
-          
-      We use the Ev-FlowNet optical flow prediction network as baseline to test Matrix-LSTM features on the MVSEC optical flow task. In the following, quantitative and qualitative results are
-      reported, where network predictions are tested by evaluating the flow predicted between consecutive frames (dt=1), and between every four frames (dt=4). <br/><br/>
-          
-          <table align=center>
-          <tr><td colspan="3" align="center"><b>MVSEC indoor_flying sequences with dt=1</b></td></tr>
-          <tr>
-              <td><iframe src="https://drive.google.com/file/d/1I2UmwypGYu7_VZP-c4ALTuATiB2BoPGW/preview"></iframe></td>
-              <td><iframe src="https://drive.google.com/file/d/1HajnohWuI49xWY5CjsQi6aAFP86bwBLq/preview"></iframe></td>
-              <td><iframe src="https://drive.google.com/file/d/1plSIGUxdmlsPpbkM9WO_Q0w4u-cFRNE2/preview"></iframe></td>
-          </tr>
-          <tr><td colspan="3" align="center"><b>MVSEC indoor_flying sequences with dt=4</b></td></tr>
-          <tr>
-              <td><iframe src="https://drive.google.com/file/d/1rgCKdB_0FbFt0o0817H5SoyS8Zdzumlj/preview"></iframe></td>
-              <td><iframe src="https://drive.google.com/file/d/1ZkKeNyQ7kddHtnAotG32dZIxrNnGn3nC/preview"></iframe></td>
-              <td><iframe src="https://drive.google.com/file/d/17MsvCXASM99mZZmNbkGnKIsxpY1nx3rF/preview"></iframe></td>
-          </tr>
-          </table><br/><br/>
-          
+    </div>
+    <hr>
+
+    <h1>Optical Flow Prediction</h1>
+    <div style="width:800px; margin:0 auto; text-align: justify">
+
+        We use the Ev-FlowNet optical flow prediction network as baseline to test Matrix-LSTM features on the MVSEC optical flow task. In the following, quantitative and qualitative results are
+        reported, where network predictions are tested by evaluating the flow predicted between consecutive frames (dt=1), and between every four frames (dt=4). <br/><br/>
+
+        <table align=center>
+            <tr><td colspan="3" align="center"><b>MVSEC indoor_flying sequences with dt=1</b></td></tr>
+            <tr>
+                <td><iframe src="https://drive.google.com/file/d/1I2UmwypGYu7_VZP-c4ALTuATiB2BoPGW/preview"></iframe></td>
+                <td><iframe src="https://drive.google.com/file/d/1HajnohWuI49xWY5CjsQi6aAFP86bwBLq/preview"></iframe></td>
+                <td><iframe src="https://drive.google.com/file/d/1plSIGUxdmlsPpbkM9WO_Q0w4u-cFRNE2/preview"></iframe></td>
+            </tr>
+            <tr><td colspan="3" align="center"><b>MVSEC indoor_flying sequences with dt=4</b></td></tr>
+            <tr>
+                <td><iframe src="https://drive.google.com/file/d/1rgCKdB_0FbFt0o0817H5SoyS8Zdzumlj/preview"></iframe></td>
+                <td><iframe src="https://drive.google.com/file/d/1ZkKeNyQ7kddHtnAotG32dZIxrNnGn3nC/preview"></iframe></td>
+                <td><iframe src="https://drive.google.com/file/d/17MsvCXASM99mZZmNbkGnKIsxpY1nx3rF/preview"></iframe></td>
+            </tr>
+        </table><br/><br/>
+
         <img style="width:650px" src="resources/semseg_table.png"/>
-        
-      </div>
-      <hr>
 
-      <center id="sourceCode"><h1>Source Code</h1></center>
-      <div style="width:800px; margin:0 auto; text-align: justify">
+    </div>
+    <hr>
+
+    <h1>Source Code</h1>
+    <div style="width:800px; margin:0 auto; text-align: justify">
         PyTorch and TensorFlow code for our paper is open-source and available on GitHub.
-        We include a CUDA kernels implementations of the groupByPixel and groupByTime operations, as well as training and evaluation code of both classification and optical flow tasks.
-      </div>
-      <table align=center width=300px>
+        We include CUDA kernels implementations of the groupByPixel and groupByTime operations, as well as training and evaluation code of both classification and optical flow tasks.
+    </div>
+    <table align=center width=300px>
         <tr>
-          <td width=300px align=center>
-            <span style="font-size:28px"><a href='https://github.com/marcocannici/matrixlstm'>[GitHub]</a></span>
-          </td>
+            <td width=300px align=center>
+                <span style="font-size:28px"><a href='https://github.com/marcocannici/matrixlstm'>[GitHub]</a></span>
+            </td>
         </tr>
-      </table>
-      <br><hr>
+    </table>
+    <br><hr>
 
-            <table align=center width=700px style="max-width: 100%">
-              <center><h1>Paper and Bibtex</h1></center>
-              <tr>
-              <td width=250px align=left>
-              <!-- <p style="margin-top:4px;"></p> -->
-              <a href="https://arxiv.org/pdf/2001.03455.pdf" target="_blank"><img style="height:150px" src="resources/thumbnail.png"/></a>
-              <center>
-              <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2001.03455.pdf" target="_blank">[ArXiv]</a></span>
-              </center>
-              </td>
-              <td width=20px align=center>
-              </td>
-              <td width=250px align=left>
-              <p style="text-align:left;">
-                <b><span style="font-size:20pt">Citation</span></b>
-                <br/>
-                <span style="font-size:6px;">&nbsp;<br/></span> 
-                  <span style="font-size:15pt">
-                      Marco Cannici, Marco Ciccone, Andrea Romanoni, Matteo Matteucci. 
-                      <b>A Differentiable Recurrent Surface for Asynchronous Event-Based Data.</b> 
-                      In <em>European Conference on Computer Vision (ECCV)</em>, 2020.</span></p>
-              </td>
-              </tr>
-              <tr>
-              <td width=250px align=left>
-              </td>
-              <td width=50px align=center>
-              </td>
-              <td width=550px align=left>
-                <div class="paper" id="lmconv2020_bib">
-<pre xml:space="preserve">
+    <table align=center width=700px style="max-width: 100%">
+        <h1>Paper and Bibtex</h1>
+        <tr>
+            <td width=250px align=left>
+                <a href="https://arxiv.org/pdf/2001.03455.pdf" target="_blank"><img style="height:150px" src="resources/thumbnail.png"/></a>
+
+                <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2001.03455.pdf" target="_blank">[ArXiv]</a></span>
+            </td>
+            <td width=20px align=center>
+            </td>
+            <td width=250px align=left>
+                <p style="text-align:left;">
+                    <b><span style="font-size:20pt">Citation</span></b>
+                    <br/>
+                    <span style="font-size:6px;">&nbsp;<br/></span>
+                    <span style="font-size:15pt">
+                          Marco Cannici, Marco Ciccone, Andrea Romanoni, Matteo Matteucci.
+                          <b>A Differentiable Recurrent Surface for Asynchronous Event-Based Data.</b>
+                          In <em>European Conference on Computer Vision (ECCV)</em>, 2020.</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width=250px align=left>
+            </td>
+            <td width=50px align=center>
+            </td>
+            <td width=550px align=left>
+                <div class="paper">
+                    <pre xml:space="preserve">
 @InProceedings{Cannici_2020_ECCV,
-    author = {Cannici, Marco and Ciccone, 
-              Marco and Romanoni, Andrea 
-              and Matteucci, Matteo},
-    title = {A Differentiable Recurrent 
-             Surface for Asynchronous 
-             Event-Based Data},
-    booktitle = {The European Conference 
+    author = {Cannici, Marco and Ciccone, Marco and
+              Romanoni, Andrea and Matteucci, Matteo},
+    title = {A Differentiable Recurrent Surface
+             for Asynchronous Event-Based Data},
+    booktitle = {The European Conference
                  on Computer Vision (ECCV)},
     month = {August},
     year = {2020}
-}</pre>
+}
+                    </pre>
                 </div>
-                </td>
-                </tr>
-            </table>
-          <hr>
+            </td>
+        </tr>
+    </table>
+    <hr>
 
 
-      <div style="text-align:center; font-size: 12px;">
+    <div style="text-align:center; font-size: 12px;">
         <a href="https://github.com/ajayjain/lmconv/tree/gh-pages" style="color: #aaa">Original Website Template</a>
-      </div>
-      </table>
+    </div>
+    </table>
 </div>
 </body>
 </html>

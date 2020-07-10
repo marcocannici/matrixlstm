@@ -9,6 +9,13 @@ body {
 
 h1 {
   font-weight:300;
+  text-align: center;
+}
+
+span{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 div {
@@ -31,6 +38,11 @@ div {
   -moz-border-radius: 10px ;
   -webkit-border-radius: 10px ;
   padding: 20px;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
 }
 
 video.header-vid {

@@ -1,5 +1,19 @@
 # A Differentiable Recurrent Surface for Asynchronous Event-Based Data
 
+Code for the paper "A Differentiable Recurrent Surface for Asynchronous Event-Based Data"<br>
+Authors: Marco Cannici, Marco Ciccone, Andrea Romanoni, Matteo Matteucci
+
+### Please cite:
+```
+@InProceedings{Cannici_2020_ECCV,
+    author = {Cannici, Marco and Ciccone, Marco and Romanoni, Andrea and Matteucci, Matteo},
+    title = {A Differentiable Recurrent Surface for Asynchronous Event-Based Data},
+    booktitle = {The European Conference on Computer Vision (ECCV)},
+    month = {August},
+    year = {2020}
+}
+```
+
 ## Project Structure
 The code is organized in two folders:
 - `classification/` containing PyTorch code for N-Cars and N-Caltech101 experiments

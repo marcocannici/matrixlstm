@@ -1,0 +1,20 @@
+exp_name: day12_1Interval_4Channels
+
+batch_size: 8
+loader_n_skips: 2
+use_paper_args: True
+number_of_steps: 300000
+loader_binarize_polarity: True
+sequences: [outdoor_day2_aug12_skip1, outdoor_day1_aug12_skip1]
+
+matrixlstm_mode: simple
+matrixlstm_in_shape: [260, 346]
+matrixlstm_maxrf: 128
+matrixlstm_keep_last: False
+matrixlstm_add_coords: False
+matrixlstm_time_mode: ts_max
+matrixlstm_norm_relative: False
+matrixlstm_channels: 4
+matrixlstm_grad_mult: 10
+matrixlstm_force_channels: -1
+matrixlstm_frame_intervals: 1

@@ -1,0 +1,45 @@
+sacred: False
+mongodb_disable: True
+iterate_seed: [0, 1, 2, 3, 4]
+
+data_dir: data/ncars/
+log_dir: checkpoints/ncars/ResNet18-EST_tsAbs_16Channels_1Interval
+exp_name: ResNet18-EST_tsAbs_16Channels_1Interval
+
+val_perc: 0.2
+num_workers: 4
+batch_size: 64
+optimize_every: 1
+learning_rate: 0.0001
+
+use_chunks: False
+max_epochs: 100
+max_beaten_epochs: 10
+keep_only_best_checkpoint: True
+
+
+input_height: 100
+input_width: 120
+lstm_type: LSTM
+lstm_num_layers: 1
+embedding_size: -1
+region_shape: 1,1
+region_stride: 1,1
+
+hidden_size: 16
+frame_intervals: 1
+
+add_time_feature_mode: ts
+normalize_relative: False
+
+add_coords_feature: False
+keep_most_recent: False
+eventdrop: -1.0
+framedrop: -1.0
+fcdrop: -1.0
+
+resnet_type: resnet18
+resnet_pretrain: True
+resnet_meanstd_norm: False
+resnet_add_last_fc: False
+resnet_replace_first: True

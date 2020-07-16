@@ -1,0 +1,55 @@
+sacred: False
+mongodb_disable: True
+iterate_seed: [0, 1, 2, 3, 4]
+
+data_dir: data/N-Caltech101-RPG
+log_dir: checkpoints/ncaltech101/ResNet34-EST_tsAbs_16Channels_2Intervals
+exp_name: ResNet34-EST_tsAbs_16Channels_2Intervals
+
+num_workers: 4
+batch_size: [4, 2, 2]
+optimize_every: 25
+learning_rate: 0.0001
+
+transforms: [hflip, extendrandcrop]
+test_transforms: [centercrop]
+transform_hflip_prob: 0.5
+transform_centercrop_h: 224
+transform_centercrop_w: 224
+transform_extendrandcrop_h: 224
+transform_extendrandcrop_w: 224
+
+use_chunks: False
+max_epochs: 100
+max_beaten_epochs: 10
+keep_only_best_checkpoint: True
+
+input_height: 224
+input_width: 224
+lstm_type: LSTM
+lstm_num_layers: 1
+embedding_size: -1
+region_shape: 1,1
+region_stride: 1,1
+
+hidden_size: 16
+frame_intervals: 2
+frame_intervals_mode: abs_ts
+
+add_time_feature_mode: ts
+normalize_relative: False
+
+add_coords_feature: False
+keep_most_recent: False
+eventdrop: -1.0
+framedrop: -1.0
+fcdrop: -1.0
+
+resnet_type: resnet34
+resnet_pretrain: True
+resnet_meanstd_norm: False
+resnet_add_last_fc: False
+resnet_replace_first: True
+resnet_replace_first_bn: False
+
+add_se_layer: True

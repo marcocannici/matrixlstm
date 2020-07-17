@@ -1,9 +1,10 @@
 # A Differentiable Recurrent Surface for Asynchronous Event-Based Data
 
-Code for the paper "A Differentiable Recurrent Surface for Asynchronous Event-Based Data"<br>
+Code for the ECCV2020 paper "A Differentiable Recurrent Surface for Asynchronous Event-Based Data"<br>
 Authors: Marco Cannici, Marco Ciccone, Andrea Romanoni, Matteo Matteucci
 
-### Please cite:
+### Citing:
+If you use Matrix-LSTM for research, please cite our accompanying ECCV2020 paper:
 ```
 @InProceedings{Cannici_2020_ECCV,
     author = {Cannici, Marco and Ciccone, Marco and Romanoni, Andrea and Matteucci, Matteo},
